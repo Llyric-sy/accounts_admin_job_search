@@ -22,6 +22,7 @@ body{margin:0;font-family:Inter,Segoe UI,Arial,sans-serif;color:var(--text);back
 .hint{font-size:12px;color:#5d6d7e;margin:0 0 9px}
 .summary{display:flex;gap:10px;flex-wrap:wrap;margin:0 0 10px}
 .kpi{background:white;border:1px solid var(--line);border-radius:8px;padding:8px 12px;font-size:13px}
+.newcount{background:#fff8dc;border-color:#e5c55b}
 .tablewrap{overflow:auto;background:white;border:1px solid var(--line);border-radius:10px;max-height:72vh}
 table{border-collapse:separate;border-spacing:0;width:max-content;min-width:100%;font-size:13px}
 th{position:sticky;top:0;background:var(--blue);color:white;padding:9px;border-right:1px solid #587b99;text-align:left;z-index:2;white-space:nowrap}
@@ -33,6 +34,8 @@ tr:hover td{background:#f8fbfd}
 .role{font-weight:700;min-width:230px}
 .employer{min-width:220px}
 .distance{white-space:nowrap;font-weight:650;font-size:12px;color:#425466;margin-top:3px}
+.annual{font-size:12px;color:#425466;margin-top:4px;white-space:nowrap}
+.newpill{display:inline-block;background:#fff0a8;border:1px solid #e5c55b;border-radius:999px;padding:3px 7px;font-size:11px;font-weight:800;white-space:nowrap}
 .status{font-weight:700;white-space:nowrap}
 .rowactions{display:flex;gap:5px;flex-wrap:wrap;min-width:250px}
 .rowbtn{border:1px solid #c6d0d9;background:#fff;padding:5px 7px;border-radius:6px;cursor:pointer;font-size:12px;font-weight:600}
