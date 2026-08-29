@@ -5,7 +5,6 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>CJ Job Application Tracker</title>
 <meta name="description" content="Interactive accounting, finance, tax, government and administration job tracker.">
-<script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -13,16 +12,14 @@
   <div class="topbar">
     <div class="brand">
       <h1>CJ Job Application Tracker</h1>
-      <div class="updated" id="updated">Loading jobs…</div>
+      <div class="updated" id="updated">Starting tracker…</div>
     </div>
     <div class="actions">
       <button class="btn" onclick="clearLocalStatuses()">Clear local status changes</button>
       <button class="btn download" onclick="downloadExcel()">⬇ Download Excel (.xlsx)</button>
     </div>
   </div>
-
   <div class="tabs" id="tabs"></div>
-
   <div class="controls">
     <input id="search" class="search" placeholder="Search role, employer, location…" oninput="render()">
     <button class="filter" data-filter="new" onclick="toggleFilter(this)">🆕 NEW only</button>
@@ -34,15 +31,10 @@
     <button class="filter" data-filter="fin" onclick="toggleFilter(this)">Finance</button>
     <button class="filter" data-filter="soon" onclick="toggleFilter(this)">Closing soon</button>
   </div>
-
-  <div class="hint">
-    Click a sortable heading to sort; click again to reverse. Distance is approximate from Beckenham to the listed suburb / primary work location.
-    Applied / Disregard / Restore / Consider changes are saved in this browser.
-  </div>
+  <div class="hint">Click a sortable heading to sort; click again to reverse. Distance is approximate from Beckenham. Applied / Disregard / Restore / Consider changes are saved in this browser.</div>
   <div class="summary" id="summary"></div>
-  <div class="tablewrap"><table id="tbl"><tr><td class="empty">Loading…</td></tr></table></div>
+  <div class="tablewrap"><table id="tbl"><tr><td class="empty">Starting tracker…</td></tr></table></div>
 </div>
-
-<script src="app.js"></script>
+<script src="app.js?v=20260829-2103"></script>
 </body>
 </html>
