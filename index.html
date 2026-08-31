@@ -8,7 +8,7 @@
 <meta http-equiv="Expires" content="0">
 <title>CJ Job Application Tracker</title>
 <meta name="description" content="Interactive accounting, finance, tax, government and administration job tracker.">
-<link rel="stylesheet" href="styles.css?v=20260831-ui2">
+<link rel="stylesheet" href="styles.css?v=20260831-mobilecards1">
 </head>
 <body>
 <div class="app">
@@ -25,12 +25,10 @@
         <button class="btn download" onclick="downloadExcel()">⬇ Download Excel</button>
       </div>
     </div>
-
     <nav class="page-switch" aria-label="Tracker pages">
       <a class="page-link active" href="index.html">Page 1 · Main Jobs</a>
       <a class="page-link" href="junior.html">Page 2 · Junior / Assistant</a>
     </nav>
-
     <div class="criteria-note">
       <span class="criteria-chip">Target: ~$35+/hr</span>
       <span class="criteria-chip">No exclusively full-time roles</span>
@@ -38,10 +36,8 @@
       <span class="criteria-chip">Part-time · Casual · Temp/Contract · FT/PT flexible</span>
     </div>
   </header>
-
   <main class="workspace">
     <div class="tabs" id="tabs"></div>
-
     <div class="toolbar">
       <div class="controls">
         <input id="search" class="search" placeholder="Search role, employer, location…" oninput="render()">
@@ -56,7 +52,6 @@
       </div>
       <div class="hint">Click any sortable heading to sort; click it again to reverse. Status buttons are saved in this browser. Distance is approximate from Beckenham.</div>
     </div>
-
     <div class="summary" id="summary"></div>
     <div class="tablewrap"><table id="tbl"><tr><td class="empty">Starting tracker…</td></tr></table></div>
   </main>
