@@ -8,40 +8,59 @@
 <meta http-equiv="Expires" content="0">
 <title>CJ Job Application Tracker</title>
 <meta name="description" content="Interactive accounting, finance, tax, government and administration job tracker.">
-<link rel="stylesheet" href="styles.css?v=20260831-0815">
+<link rel="stylesheet" href="styles.css?v=20260831-ui2">
 </head>
 <body>
 <div class="app">
-  <div class="topbar">
-    <div class="brand">
-      <h1>CJ Job Application Tracker</h1>
-      <div class="updated" id="updated">Starting tracker…</div>
+  <header class="hero">
+    <div class="topbar">
+      <div class="brand">
+        <div class="eyebrow">Career Search Workspace · Page 1</div>
+        <h1>Main Job Tracker</h1>
+        <div class="subtitle">Higher-value accounting, finance, government, healthcare administration and corporate opportunities — prioritised around pay, realistic chance, career value and study flexibility.</div>
+        <div class="updated" id="updated">Starting tracker…</div>
+      </div>
+      <div class="actions">
+        <button class="btn" onclick="clearLocalStatuses()">Clear local status changes</button>
+        <button class="btn download" onclick="downloadExcel()">⬇ Download Excel</button>
+      </div>
     </div>
-    <div class="actions">
-      <button class="btn" onclick="clearLocalStatuses()">Clear local status changes</button>
-      <button class="btn download" onclick="downloadExcel()">⬇ Download Excel (.xlsx)</button>
+
+    <nav class="page-switch" aria-label="Tracker pages">
+      <a class="page-link active" href="index.html">Page 1 · Main Jobs</a>
+      <a class="page-link" href="junior.html">Page 2 · Junior / Assistant</a>
+    </nav>
+
+    <div class="criteria-note">
+      <span class="criteria-chip">Target: ~$35+/hr</span>
+      <span class="criteria-chip">No exclusively full-time roles</span>
+      <span class="criteria-chip">Beckenham distance base</span>
+      <span class="criteria-chip">Part-time · Casual · Temp/Contract · FT/PT flexible</span>
     </div>
-  </div>
-  <div style="display:flex;gap:8px;flex-wrap:wrap;margin:0 0 10px">
-    <a class="btn download" href="index.html" style="text-decoration:none">Page 1 — Main Jobs ($35+)</a>
-    <a class="btn" href="junior.html" style="text-decoration:none">Page 2 — Junior / Assistant ($25–$35)</a>
-  </div>
-  <div class="tabs" id="tabs"></div>
-  <div class="controls">
-    <input id="search" class="search" placeholder="Search role, employer, location…" oninput="render()">
-    <button class="filter" data-filter="new" onclick="toggleFilter(this)">🆕 NEW only</button>
-    <button class="filter" data-filter="40" onclick="toggleFilter(this)">$40+/hr</button>
-    <button class="filter" data-filter="part" onclick="toggleFilter(this)">Part-time</button>
-    <button class="filter" data-filter="hybrid" onclick="toggleFilter(this)">Hybrid / remote</button>
-    <button class="filter" data-filter="gov" onclick="toggleFilter(this)">Government</button>
-    <button class="filter" data-filter="acct" onclick="toggleFilter(this)">Accounting</button>
-    <button class="filter" data-filter="fin" onclick="toggleFilter(this)">Finance</button>
-    <button class="filter" data-filter="soon" onclick="toggleFilter(this)">Closing soon</button>
-  </div>
-  <div class="hint">Page 1 is the main higher-paying tracker. Click a sortable heading to sort; click again to reverse. Distance is approximate from Beckenham. Applied / Disregard / Restore / Consider changes are saved in this browser.</div>
-  <div class="summary" id="summary"></div>
-  <div class="tablewrap"><table id="tbl"><tr><td class="empty">Starting tracker…</td></tr></table></div>
+  </header>
+
+  <main class="workspace">
+    <div class="tabs" id="tabs"></div>
+
+    <div class="toolbar">
+      <div class="controls">
+        <input id="search" class="search" placeholder="Search role, employer, location…" oninput="render()">
+        <button class="filter" data-filter="new" onclick="toggleFilter(this)">🆕 NEW only</button>
+        <button class="filter" data-filter="40" onclick="toggleFilter(this)">$40+/hr</button>
+        <button class="filter" data-filter="part" onclick="toggleFilter(this)">Part-time</button>
+        <button class="filter" data-filter="hybrid" onclick="toggleFilter(this)">Hybrid / remote</button>
+        <button class="filter" data-filter="gov" onclick="toggleFilter(this)">Government</button>
+        <button class="filter" data-filter="acct" onclick="toggleFilter(this)">Accounting</button>
+        <button class="filter" data-filter="fin" onclick="toggleFilter(this)">Finance</button>
+        <button class="filter" data-filter="soon" onclick="toggleFilter(this)">Closing soon</button>
+      </div>
+      <div class="hint">Click any sortable heading to sort; click it again to reverse. Status buttons are saved in this browser. Distance is approximate from Beckenham.</div>
+    </div>
+
+    <div class="summary" id="summary"></div>
+    <div class="tablewrap"><table id="tbl"><tr><td class="empty">Starting tracker…</td></tr></table></div>
+  </main>
 </div>
-<script src="tracker-app.js?v=20260831-0815"></script>
+<script src="tracker-app.js?v=20260831-ui2"></script>
 </body>
 </html>
