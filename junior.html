@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
+<title>CJ Junior / Assistant Job Tracker</title>
+<meta name="description" content="Junior, assistant, trainee and entry-level Perth job tracker targeting roughly $25–$35 per hour.">
+<link rel="stylesheet" href="styles.css?v=20260831-junior1">
+</head>
+<body>
+<div class="app">
+  <div class="topbar">
+    <div class="brand">
+      <h1>CJ Junior / Assistant Job Tracker</h1>
+      <div class="updated" id="updated">Starting junior tracker…</div>
+    </div>
+    <div class="actions">
+      <button class="btn" onclick="clearLocalStatuses()">Clear local status changes</button>
+      <button class="btn download" onclick="downloadExcel()">⬇ Download Junior Excel (.xlsx)</button>
+    </div>
+  </div>
+  <div style="display:flex;gap:8px;flex-wrap:wrap;margin:0 0 10px">
+    <a class="btn" href="index.html" style="text-decoration:none">Page 1 — Main Jobs ($35+)</a>
+    <a class="btn download" href="junior.html" style="text-decoration:none">Page 2 — Junior / Assistant ($25–$35)</a>
+  </div>
+  <div class="tabs" id="tabs"></div>
+  <div class="controls">
+    <input id="search" class="search" placeholder="Search junior role, employer, location…" oninput="render()">
+    <button class="filter" data-filter="new" onclick="toggleFilter(this)">🆕 NEW only</button>
+    <button class="filter" data-filter="30" onclick="toggleFilter(this)">$30+/hr</button>
+    <button class="filter" data-filter="pt" onclick="toggleFilter(this)">Part-time</button>
+    <button class="filter" data-filter="temp" onclick="toggleFilter(this)">Casual / Temp</button>
+    <button class="filter" data-filter="remote" onclick="toggleFilter(this)">Hybrid / remote</button>
+    <button class="filter" data-filter="acct" onclick="toggleFilter(this)">Accounting / Finance</button>
+    <button class="filter" data-filter="admin" onclick="toggleFilter(this)">Admin / Office</button>
+    <button class="filter" data-filter="health" onclick="toggleFilter(this)">Healthcare Admin</button>
+    <button class="filter" data-filter="soon" onclick="toggleFilter(this)">Closing soon</button>
+  </div>
+  <div class="hint">Page 2 focuses on junior / assistant / trainee / entry-level roles around $25–$35/hr. Full-time-only jobs are excluded. Click sortable headings to sort; browser status changes are saved locally.</div>
+  <div class="summary" id="summary"></div>
+  <div class="tablewrap"><table id="tbl"><tr><td class="empty">Starting junior tracker…</td></tr></table></div>
+</div>
+<script src="junior-data.js?v=20260831-junior1"></script>
+<script src="junior-app.js?v=20260831-junior1"></script>
+</body>
+</html>
