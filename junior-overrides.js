@@ -1,16 +1,29 @@
 (function(){
   if(!Array.isArray(window.JUNIOR_JOBS)) return;
-  const job=window.JUNIOR_JOBS.find(j=>j.id==="JR001");
-  if(!job) return;
-  Object.assign(job,{
-    status:"🟣 Interview",
-    applied_date:"29 Aug 2026",
-    interview_date:"3 Sep 2026",
-    interview_time:"1:00 PM",
-    interview_with:"Oscar Smith — Accountant",
-    interview_location:"Joondalup Resort, 45 Joondalup Resort Country Club Boulevard, Connolly WA 6027",
-    application_employer:"TenGolf Group",
-    interview_reference:"EH-6141636",
-    career:"Excellent — specifically aimed at current Accounting/Finance/Commerce students; supplier invoices, finance support and practical accounting exposure. 🟣 INTERVIEW: Thu 3 Sep 2026 at 1:00 PM with Oscar Smith (Accountant) at Joondalup Resort."
-  });
+
+  const interviewJob=window.JUNIOR_JOBS.find(j=>j.id==="JR001");
+  if(interviewJob){
+    Object.assign(interviewJob,{
+      status:"🟣 Interview",
+      applied_date:"29 Aug 2026",
+      interview_date:"3 Sep 2026",
+      interview_time:"1:00 PM",
+      interview_with:"Oscar Smith — Accountant",
+      interview_location:"Joondalup Resort, 45 Joondalup Resort Country Club Boulevard, Connolly WA 6027",
+      application_employer:"TenGolf Group",
+      interview_reference:"EH-6141636",
+      career:"Excellent — specifically aimed at current Accounting/Finance/Commerce students; supplier invoices, finance support and practical accounting exposure. 🟣 INTERVIEW: Thu 3 Sep 2026 at 1:00 PM with Oscar Smith (Accountant) at Joondalup Resort."
+    });
+  }
+
+  const skipp=window.JUNIOR_JOBS.find(j=>j.id==="JR003");
+  if(skipp){
+    Object.assign(skipp,{
+      status:"❌ Closed",
+      closing:"Listing no longer verifiable — checked 1 Sep 2026",
+      source:"",
+      career:"Previously listed as a flexible part-time accounts/admin opportunity, but the exact Skipp Electrics listing can no longer be found or verified as active. Retained in Closed history rather than deleted.",
+      closure_reason:"Exact employer/title listing no longer found in current searches on 1 Sep 2026"
+    });
+  }
 })();
