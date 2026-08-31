@@ -31,10 +31,11 @@
   if(skg){
     Object.assign(skg,{
       status:"❌ Closed",
-      closing:"Applications closed 23 Aug 2026 — verified 1 Sep 2026",
+      listed:"≤19 Aug 2026 — exact posting date unconfirmed",
+      closing:"23 Aug 2026",
       source:"https://au.indeed.com/viewjob?jk=5d9aeda734417ab4",
-      career:"Strong healthcare-finance role involving billing, banking queries, payments and health-fund/Medicare claims, but the exact advertisement states applications closed Sunday 23 Aug 2026 and it is no longer shown on SKG Radiology's current SEEK company jobs page.",
-      closure_reason:"Application closing date passed and exact role no longer present on current SKG SEEK company page; checked 1 Sep 2026"
+      career:"Strong healthcare-finance role involving billing, banking queries, payments and health-fund/Medicare claims. The exact ad confirms applications closed Sunday 23 Aug 2026. The tracker previously showed 27 Aug as the listing date from a stale search-result snippet; that was incorrect. The role is confirmed to have been live by 19 Aug 2026, but the exact original posting date is not verified.",
+      closure_reason:"Applications closed 23 Aug 2026; exact role no longer active. Listing date corrected on 1 Sep 2026 after identifying stale search-result metadata."
     });
   }
 })();
