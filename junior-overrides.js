@@ -34,4 +34,17 @@
   window.JUNIOR_JOBS.forEach(job=>{
     if(audit[job.id]) Object.assign(job,audit[job.id],{verified_date:"2 Sep 2026"});
   });
+
+  try{
+    const key="cj_junior_job_tracker_status_v1";
+    const saved=JSON.parse(localStorage.getItem(key)||"{}")||{};
+    let changed=false;
+    Object.keys(audit).forEach(id=>{
+      if(saved[id] && !/Applied|Interview|Waiting|Offer/.test(saved[id])){
+        delete saved[id];
+        changed=true;
+      }
+    });
+    if(changed) localStorage.setItem(key,JSON.stringify(saved));
+  }catch(_){ }
 })();
