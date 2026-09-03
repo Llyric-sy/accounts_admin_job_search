@@ -1,7 +1,7 @@
 (function(){
   if(!Array.isArray(window.JUNIOR_JOBS)) return;
   if(window.JUNIOR_TRACKER_META){
-    window.JUNIOR_TRACKER_META.updatedAt="2026-09-02T15:30:00+08:00";
+    window.JUNIOR_TRACKER_META.updatedAt="2026-09-03T08:51:54+08:00";
     window.JUNIOR_TRACKER_META.commuteRule="Exclude likely 1hr+ peak-hour commutes from Beckenham unless genuinely remote/WFH";
   }
 
@@ -40,6 +40,21 @@
   window.JUNIOR_JOBS.forEach(job=>{
     if(audit[job.id]) Object.assign(job,audit[job.id],{verified_date:"2 Sep 2026"});
   });
+
+  if(!window.JUNIOR_JOBS.some(j=>j.id==="JR020")){
+    window.JUNIOR_JOBS.push({
+      id:"JR020",rank:20,role:"Finance Appraisals Admin",employer:"Healthcare Practice Sales Pty Ltd",location:"Australia-wide remote",distance_km:null,
+      pay:"$32/hr + super | ≈$63.2k p.a. FTE",pay_min:32,pay_max:32,
+      employment:"Permanent part-time / job share — 10 hrs/week, 2 hrs daily Mon–Fri",
+      arrangement:"100% work from home; explicitly open to suitably experienced applicants Australia-wide; set hours around midday AEST",
+      chance:"Med–High",relevance_label:"Excellent",
+      career:"Excellent junior finance/healthcare-administration crossover. Work centres on onboarding, requesting and collating financial reports, secure document handling, client communication and finance-team support rather than performing the valuation analysis. Familiarity with P&L statements and Excel is mandatory; ongoing training and support are advertised.",
+      listed:"Late Aug 2026 — exact date unconfirmed",date_added:"3 Sep 2026",closing:"Open / verified current 3 Sep 2026",type:"Vacancy",status:"🟢 Apply",
+      source:"https://au.seek.com/remote-work-from-home-accounting-jobs/part-time",
+      category:["Accounting & Finance","Healthcare Admin","Admin / Office"],remote_only:true,
+      legitimacy_note:"Employer is independently verified as an active Australian private company (ABN 40 655 079 815) with an established official website. Exact ad explicitly states applicants may be based anywhere in Australia and the role is 100% WFH."
+    });
+  }
 
   try{
     const key="cj_junior_job_tracker_status_v1";
