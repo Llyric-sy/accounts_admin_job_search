@@ -6,7 +6,8 @@
     J090:{status:"❌ Closed",closing:"Listing no longer shown on current Pacvac careers page — verified 2 Sep 2026",source:"https://employmenthero.com/jobs/organisations/pacvac/",closure_reason:"The live Pacvac Employment Hero vacancies page no longer lists Accounts Officer. Older Employment Hero/SEEK/Jora search indexes still show the role, but those are stale cached results and are not treated as current evidence.",career:"Previously a strong Kewdale part-time Accounts Officer opportunity. The live Pacvac careers page no longer lists this vacancy as at 2 Sep 2026, so it has been moved to Closed. Older indexed job-board copies remain online but are stale.",verified_date:"2 Sep 2026"},
     J091:{status:"🔵 Applied",applied_date:"2 Sep 2026",application_evidence:"SEEK application confirmation email",verified_date:"3 Sep 2026"},
     J092:{status:"🔵 Applied",applied_date:"2 Sep 2026",application_evidence:"SEEK application confirmation email",verified_date:"3 Sep 2026"},
-    J096:{status:"🔵 Applied",applied_date:"2 Sep 2026",application_evidence:"Employment Hero application receipt",source:"https://employmenthero.com/jobs/position/flinders-cardiac-accounts-assistant-bookkeeper-remote-53zva/",closing:"Open / verified current 3 Sep 2026",verified_date:"3 Sep 2026"}
+    J096:{status:"🔵 Applied",applied_date:"2 Sep 2026",application_evidence:"Employment Hero application receipt",source:"https://employmenthero.com/jobs/position/flinders-cardiac-accounts-assistant-bookkeeper-remote-53zva/",closing:"Open / verified current 3 Sep 2026",verified_date:"3 Sep 2026"},
+    J102:{status:"🔵 Applied",applied_date:"4 Sep 2026",application_evidence:"SEEK confirmation plus direct application email to M2 Corporate",verified_date:"4 Sep 2026"}
   };
   function applyFixes(){
     try{
