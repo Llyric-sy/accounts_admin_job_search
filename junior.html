@@ -36,6 +36,7 @@
       <span class="criteria-chip">Beckenham distance base</span>
       <span class="criteria-chip">Exclude ~1hr+ peak commute unless remote/WFH</span>
       <span class="criteria-chip">Australia-wide allowed if genuinely 100% remote</span>
+      <span class="criteria-chip">Exact job-ad links only — no generic SEEK searches</span>
     </div>
   </header>
   <main class="workspace">
@@ -53,7 +54,7 @@
         <button class="filter" data-filter="health" onclick="toggleFilter(this)">Healthcare Admin</button>
         <button class="filter" data-filter="soon" onclick="toggleFilter(this)">Closing soon</button>
       </div>
-      <div class="hint">Junior page focuses on lower-barrier professional roles around $25–$35/hr. Click sortable headings to sort; browser status changes are saved locally.</div>
+      <div class="hint">Junior page focuses on lower-barrier professional roles around $25–$35/hr. Source links must open the exact job advertisement; broad SEEK search pages are suppressed. Click sortable headings to sort; browser status changes are saved locally.</div>
     </div>
     <div class="summary" id="summary"></div>
     <div class="tablewrap"><table id="tbl"><tr><td class="empty">Starting junior tracker…</td></tr></table></div>
@@ -62,6 +63,7 @@
 <script src="junior-data.js?v=20260902-fullaudit2"></script>
 <script src="junior-overrides.js?v=20260902-commute1"></script>
 <script src="junior-app.js?v=20260902-fullaudit2"></script>
+<script src="exact-source-policy.js?v=20260904-exact1"></script>
 <script src="dark-mode.js"></script>
 </body>
 </html>
