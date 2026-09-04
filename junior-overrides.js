@@ -1,7 +1,7 @@
 (function(){
   if(!Array.isArray(window.JUNIOR_JOBS)) return;
   if(window.JUNIOR_TRACKER_META){
-    window.JUNIOR_TRACKER_META.updatedAt="2026-09-03T08:51:54+08:00";
+    window.JUNIOR_TRACKER_META.updatedAt="2026-09-04T08:46:44+08:00";
     window.JUNIOR_TRACKER_META.commuteRule="Exclude likely 1hr+ peak-hour commutes from Beckenham unless genuinely remote/WFH";
   }
 
@@ -50,9 +50,37 @@
       chance:"Med–High",relevance_label:"Excellent",
       career:"Excellent junior finance/healthcare-administration crossover. Work centres on onboarding, requesting and collating financial reports, secure document handling, client communication and finance-team support rather than performing the valuation analysis. Familiarity with P&L statements and Excel is mandatory; ongoing training and support are advertised.",
       listed:"Late Aug 2026 — exact date unconfirmed",date_added:"3 Sep 2026",closing:"Open / verified current 3 Sep 2026",type:"Vacancy",status:"🟢 Apply",
-      source:"https://au.seek.com/remote-work-from-home-accounting-jobs/part-time",
+      source:"",exact_link_unverified:true,
       category:["Accounting & Finance","Healthcare Admin","Admin / Office"],remote_only:true,
-      legitimacy_note:"Employer is independently verified as an active Australian private company (ABN 40 655 079 815) with an established official website. Exact ad explicitly states applicants may be based anywhere in Australia and the role is 100% WFH."
+      legitimacy_note:"Employer is independently verified as an active Australian private company (ABN 40 655 079 815) with an established official website. Exact ad explicitly states applicants may be based anywhere in Australia and the role is 100% WFH. Exact job-detail URL remains unverified, so Source is intentionally blank rather than using a generic SEEK search URL."
+    });
+  }
+
+  if(!window.JUNIOR_JOBS.some(j=>j.id==="JR021")){
+    window.JUNIOR_JOBS.push({
+      id:"JR021",rank:21,role:"Receptionist / Undergraduate Accountant (Part-Time)",employer:"Faulkner & Co Pty Ltd",location:"West Perth",distance_km:16,
+      pay:"Not disclosed",pay_min:null,pay_max:null,
+      employment:"Part-time — job-share with another university student",
+      arrangement:"On-site; explicitly student-friendly and designed around current study",
+      chance:"Very High",relevance_label:"Excellent",
+      career:"Outstanding entry pathway for an early-stage Accounting student. Primary reception/admin duties are combined with training in basic accounting and tax-related tasks, document/workpaper preparation and client information compilation. No prior experience is required, and the ad explicitly offers progression toward an Undergraduate Accountant role plus future CA/CPA support.",
+      listed:"Late Aug / early Sep 2026 — exact date unconfirmed",date_added:"4 Sep 2026",closing:"Open / verified current 4 Sep 2026",type:"Vacancy",status:"🟢 Apply",
+      source:"https://au.seek.com/job/94195613",
+      category:["Accounting & Finance","Admin / Office","Professional Services"]
+    });
+  }
+
+  if(!window.JUNIOR_JOBS.some(j=>j.id==="JR022")){
+    window.JUNIOR_JOBS.push({
+      id:"JR022",rank:22,role:"Administrator",employer:"BaptistCare",location:"Salter Point",distance_km:11,
+      pay:"$27.77–$35.08/hr + super + NFP salary packaging | ≈$54.9k–$69.3k p.a. FTE",pay_min:27.77,pay_max:35.08,
+      employment:"Permanent part-time — 25 hrs/week, Monday–Friday",
+      arrangement:"On-site at Riverside Village, Salter Point",
+      chance:"High",relevance_label:"High",
+      career:"Strong general administration and healthcare-sector option. Duties include resident/customer service, records and correspondence, property administration, resident accounts and financial processes. Current tax/client-service/admin experience transfers well without requiring prior aged-care administration experience.",
+      listed:"3 Sep 2026",date_added:"4 Sep 2026",closing:"1 Oct 2026",type:"Vacancy",status:"🟢 Apply",
+      source:"https://careers.pageuppeople.com/999/cw/en/job/498954/administrator",
+      category:["Healthcare Admin","Admin / Office","Accounting & Finance"]
     });
   }
 
