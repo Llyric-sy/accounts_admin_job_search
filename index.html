@@ -16,10 +16,8 @@
   <header class="hero">
     <div class="topbar">
       <div class="brand">
-        <div class="eyebrow">Career Search Workspace · Page 1</div>
         <h1>Main Job Tracker</h1>
-        <div class="subtitle">Higher-value accounting, finance, government, healthcare administration and corporate opportunities — prioritised around pay, realistic chance, career value and study flexibility.</div>
-        <div class="updated" id="updated">Starting tracker…</div>
+        <div class="updated" id="updated" style="display:none">Starting tracker…</div>
       </div>
       <div class="actions">
         <button class="btn" onclick="clearLocalStatuses()">Clear local status changes</button>
@@ -30,15 +28,6 @@
       <a class="page-link active" href="index.html">Page 1 · Main Jobs</a>
       <a class="page-link" href="junior.html">Page 2 · Junior / Assistant</a>
     </nav>
-    <div class="criteria-note">
-      <span class="criteria-chip">Target: ~$35+/hr</span>
-      <span class="criteria-chip">No exclusively full-time roles</span>
-      <span class="criteria-chip">Beckenham distance base</span>
-      <span class="criteria-chip">Exclude ~1hr+ peak commute unless remote/WFH</span>
-      <span class="criteria-chip">Australia-wide allowed if genuinely 100% remote</span>
-      <span class="criteria-chip">Exact job-ad links only — no generic SEEK searches</span>
-      <span class="criteria-chip">Part-time · Casual · Temp/Contract · FT/PT flexible</span>
-    </div>
   </header>
   <main class="workspace">
     <div class="tabs" id="tabs"></div>
@@ -54,7 +43,6 @@
         <button class="filter" data-filter="fin" onclick="toggleFilter(this)">Finance</button>
         <button class="filter" data-filter="soon" onclick="toggleFilter(this)">Closing soon</button>
       </div>
-      <div class="hint">Jobs are shown as full-detail cards for vertical scrolling. Use the sort chips above the cards to sort; click the same chip again to reverse. Source links must open the exact job advertisement; broad SEEK search pages are suppressed. Status buttons are saved in this browser. Distance is approximate from Beckenham.</div>
     </div>
     <div class="summary" id="summary"></div>
     <div class="tablewrap"><table id="tbl"><tr><td class="empty">Starting tracker…</td></tr></table></div>
