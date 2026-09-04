@@ -1,14 +1,21 @@
 (function(){
   "use strict";
 
+  function isSeekHost(hostname){
+    return /(^|\.)seek\.com\.au$/i.test(hostname) || /(^|\.)seek\.com$/i.test(hostname);
+  }
+
   function isGenericSeek(url){
     if(!url) return false;
     try{
       const u=new URL(url,window.location.href);
-      if(!/(^|\.)seek\.com\.au$/i.test(u.hostname)) return false;
+      if(!isSeekHost(u.hostname)) return false;
       return !/^\/job\/\d+/i.test(u.pathname);
     }catch(_){
-      return /seek\.com\.au/i.test(String(url)) && !/seek\.com\.au\/job\/\d+/i.test(String(url));
+      const s=String(url);
+      const isSeek=/seek\.com(?:\.au)?/i.test(s);
+      const isExact=/seek\.com(?:\.au)?\/job\/\d+/i.test(s);
+      return isSeek && !isExact;
     }
   }
 
