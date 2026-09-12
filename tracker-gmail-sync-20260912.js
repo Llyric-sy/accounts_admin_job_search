@@ -8,12 +8,22 @@
   function apply(){
     try{
       if(typeof jobs==="undefined"||!Array.isArray(jobs)||!jobs.length){setTimeout(apply,140);return;}
+      let changed=false;
       jobs.forEach(j=>{
-        if(!fixes[j.id]) return;
-        Object.assign(j,fixes[j.id]);
-        if(typeof statusOverrides!=="undefined" && statusOverrides[j.id] && !/Applied|Interview|Waiting|Offer/.test(fixes[j.id].status||"")) delete statusOverrides[j.id];
+        const f=fixes[j.id];
+        if(!f) return;
+        Object.assign(j,f);
+        if(typeof statusOverrides!=="undefined" && statusOverrides[j.id]){
+          const local=statusOverrides[j.id];
+          const verified=f.status||"";
+          let clear=false;
+          if(/Closed|Disregarded/.test(verified)) clear=true;
+          else if(/Waiting/.test(verified)) clear=!/Offer/.test(local);
+          else if(/Applied/.test(verified)) clear=!/Applied|Interview|Waiting|Offer/.test(local);
+          if(clear){delete statusOverrides[j.id];changed=true;}
+        }
       });
-      if(typeof saveOverrides==="function") saveOverrides();
+      if(changed && typeof saveOverrides==="function") saveOverrides();
       if(typeof render==="function") render();
     }catch(_){setTimeout(apply,220);}
   }
