@@ -1,0 +1,7 @@
+(function(){
+  if(!Array.isArray(window.JUNIOR_JOBS)) return;
+  if(window.JUNIOR_TRACKER_META) window.JUNIOR_TRACKER_META.updatedAt="2026-09-19T11:51:09+08:00";
+  if(!window.JUNIOR_JOBS.some(j=>j.id==="JR031")){
+    window.JUNIOR_JOBS.push({id:"JR031",rank:31,new:"🆕",role:"Administrative Assistant",employer:"North Metropolitan Health Service — Women and Newborn Health Service / SARC",location:"Subiaco",distance_km:18,pay:"HSO Level 2 $76,807–$81,776 p.a. FTE/pro rata | ≈$38.87–$41.38/hr derived from 38 hrs/week + super",pay_min:38.87,pay_max:41.38,employment:"Permanent part-time / fixed-term part-time — 0.6 FTE, 45.6 hrs/fortnight",arrangement:"On-site / flexible work options may be considered where operationally appropriate",chance:"High",relevance_label:"Very High",career:"Very High hospital-administration entry role at SARC: administrative support, data/document control, accurate data entry and frontline reception in a clinical service. No specified years-of-experience requirement is stated in the exact vacancy. Requires a 2–3 page statement addressing JDF criteria plus resume and two referees.",listed:"8 Sep 2026",date_added:"19 Sep 2026",closing:"2 Oct 2026 — 4:00 PM AWST",type:"Vacancy",status:"🟢 Apply",source:"https://search.jobs.wa.gov.au/jobs/administrative-assistant-perth-metropolitan-western-australia-australia",category:["Healthcare Admin","Admin / Office"],verified_date:"19 Sep 2026",legitimacy_note:"Exact WA Government Jobs vacancy verified active 19 Sep 2026; vacancy 00005746, North Metropolitan Health Service, Subiaco."});
+  }
+})();
