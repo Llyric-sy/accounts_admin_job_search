@@ -1,0 +1,7 @@
+(function(){
+  if(!Array.isArray(window.JUNIOR_JOBS)) return;
+  if(window.JUNIOR_TRACKER_META) window.JUNIOR_TRACKER_META.updatedAt="2026-09-20T06:29:24+08:00";
+  if(!window.JUNIOR_JOBS.some(j=>j.id==="JR032")){
+    window.JUNIOR_JOBS.push({id:"JR032",rank:32,new:"🆕",role:"Patient Records Clerk",employer:"St John WA",location:"Belmont",distance_km:12,pay:"Pay not disclosed | annual/FTE figure not advertised + NFP benefits/salary packaging",pay_min:null,pay_max:null,employment:"Fixed-term part-time — 12 months, 15 hrs/week; 2 x 7.5-hour days or 3 x 5-hour days",arrangement:"On-site — hours between 8:30 AM and 4:30 PM",chance:"Very High",relevance_label:"Excellent",career:"Excellent healthcare-finance entry role in St John WA's Finance department: patient care record checking, debtor identification, ambulance transport billing, account reversals/recharges, email account queries, database entry and monthly invoicing to major debtors. Prior similar experience is highly regarded but explicitly not essential.",listed:"Sep 2026 — exact posting date unconfirmed",date_added:"20 Sep 2026",closing:"28 Sep 2026 — 6:00 PM AWST",type:"Vacancy",status:"🟢 Apply",source:"https://careers.stjohnwa.com.au/jobs/patient-records-clerk-belmont-wa-australia-fcf646f2-cfec-4ff8-9de7-ae0ec3aa8a3f",category:["Healthcare Admin","Accounting & Finance","Admin / Office"],verified_date:"20 Sep 2026",legitimacy_note:"Exact St John WA careers vacancy verified active 20 Sep 2026; no specified years-of-experience requirement."});
+  }
+})();
