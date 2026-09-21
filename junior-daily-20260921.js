@@ -1,0 +1,18 @@
+(function(){
+  if(!Array.isArray(window.JUNIOR_JOBS)) return;
+  if(window.JUNIOR_TRACKER_META) window.JUNIOR_TRACKER_META.updatedAt="2026-09-21T12:12:25+08:00";
+
+  const sarc=window.JUNIOR_JOBS.find(j=>j.role==="Administrative Assistant" && /North Metropolitan Health Service/i.test(j.employer||""));
+  if(sarc){
+    Object.assign(sarc,{status:"🔵 Applied",applied_date:"21 Sep 2026",application_evidence:"Direct WA Health application receipt received 21 Sep 2026 at 8:55 AM",application_note:"Application received by North Metropolitan Health Service; public vacancy remains active through 2 Oct 2026.",verified_date:"21 Sep 2026"});
+  } else if(!window.JUNIOR_JOBS.some(j=>j.id==="JR033")){
+    window.JUNIOR_JOBS.push({id:"JR033",rank:33,role:"Administrative Assistant",employer:"North Metropolitan Health Service — SARC",location:"Subiaco",distance_km:18,pay:"$76,807–$81,776 p.a. FTE/pro rata advertised | ≈$38.87–$41.38/hr derived + super",pay_min:38.87,pay_max:41.38,employment:"Permanent / fixed-term part-time — 0.6 FTE, 45.6 hrs/fortnight",arrangement:"On-site — Sexual Assault Resource Centre Education and Training Unit",chance:"High",relevance_label:"Excellent",career:"Hospital administration role covering administrative support, data and document control, accurate data entry/extraction and maintenance of clinical service data.",listed:"Sep 2026",date_added:"21 Sep 2026",closing:"2 Oct 2026 — 4:00 PM AWST",type:"Vacancy",status:"🔵 Applied",applied_date:"21 Sep 2026",application_evidence:"Direct WA Health application receipt received 21 Sep 2026 at 8:55 AM",application_note:"Application received by North Metropolitan Health Service; public vacancy verified active 21 Sep 2026.",source:"https://search.jobs.wa.gov.au/jobs/administrative-assistant-perth-metropolitan-western-australia-australia",category:["Healthcare Admin","Admin / Office"],verified_date:"21 Sep 2026",legitimacy_note:"Exact WA Government vacancy verified active 21 Sep 2026; no specified years-of-experience requirement surfaced."});
+  }
+
+  const his=window.JUNIOR_JOBS.find(j=>/Health Information Services Officer/i.test(j.role||"") && /St John of God/i.test(j.employer||""));
+  if(his){
+    Object.assign(his,{status:"🔵 Applied",applied_date:"21 Sep 2026",application_evidence:"Direct SJGHC Workday application receipt received 21 Sep 2026",application_note:"Application received for Health Information Services Officer.",verified_date:"21 Sep 2026"});
+  } else if(!window.JUNIOR_JOBS.some(j=>j.id==="JR034")){
+    window.JUNIOR_JOBS.push({id:"JR034",rank:34,role:"Health Information Services Officer",employer:"St John of God Health Care — Midland",location:"Midland",distance_km:24,pay:"Competitive remuneration advertised; exact hourly and annual/FTE figures not disclosed in verified vacancy evidence + salary packaging",pay_min:null,pay_max:null,employment:"Casual",arrangement:"On-site — Midland hospital",chance:"High",relevance_label:"Excellent",career:"Strong hospital-entry role building health-information and patient-records experience. Current public indexing describes flexible casual work at Midland.",listed:"Sep 2026",date_added:"21 Sep 2026",closing:"Application submitted — public exact-link verification not retained",type:"Vacancy",status:"🔵 Applied",applied_date:"21 Sep 2026",application_evidence:"Direct SJGHC Workday application receipt received 21 Sep 2026",application_note:"Application received for Health Information Services Officer. Preserved as application history; no generic search/category URL substituted.",source:"",category:["Healthcare Admin","Admin / Office"],verified_date:"21 Sep 2026",exact_link_unverified:true});
+  }
+})();
