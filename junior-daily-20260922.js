@@ -1,0 +1,8 @@
+(function(){
+  if(!Array.isArray(window.JUNIOR_JOBS)) return;
+  if(window.JUNIOR_TRACKER_META) window.JUNIOR_TRACKER_META.updatedAt="2026-09-22T17:37:39+08:00";
+
+  if(!window.JUNIOR_JOBS.some(j=>j.id==="JR037")){
+    window.JUNIOR_JOBS.push({id:"JR037",rank:37,role:"HIAS Officer - Relief",employer:"Child and Adolescent Health Service — Perth Children's Hospital",location:"Nedlands",distance_km:20,pay:"$76,807–$81,776 p.a. FTE/pro rata advertised | ≈$38.87–$41.38/hr derived + super",pay_min:38.87,pay_max:41.38,employment:"Permanent full-time and/or part-time — appointments up to 1.4 FTE; part-time eligible",arrangement:"On-site — Perth Children's Hospital; relief/frontline hospital administration",chance:"High",relevance_label:"Excellent",career:"Strong hospital-entry administration role providing frontline reception and patient administration across Admissions, Emergency, Outpatients and Wards, including admissions, transfers, discharges, referrals, appointments, interpreter services and patient transport. Added on the part-time pathway; permanent full-time alone would not qualify for the dedicated hospital-entry search.",listed:"Sep 2026",date_added:"22 Sep 2026",closing:"5 Oct 2026 — 4:00 PM AWST",type:"Vacancy",status:"🟢 Apply",source:"https://search.jobs.wa.gov.au/jobs/hias-officer-relief-perth-metropolitan-western-australia-australia",category:["Healthcare Admin","Admin / Office","Government"],verified_date:"22 Sep 2026",legitimacy_note:"Exact WA Government vacancy verified active 22 Sep 2026. Vacancy expressly permits permanent part-time appointments; no specified minimum years-of-experience requirement surfaced in verified vacancy evidence."});
+  }
+})();
