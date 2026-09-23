@@ -1,0 +1,8 @@
+(function(){
+  if(!Array.isArray(window.JUNIOR_JOBS)) return;
+  if(window.JUNIOR_TRACKER_META) window.JUNIOR_TRACKER_META.updatedAt="2026-09-23T11:33:53+08:00";
+
+  if(!window.JUNIOR_JOBS.some(j=>j.id==="JR038")){
+    window.JUNIOR_JOBS.push({id:"JR038",rank:38,role:"Administration Officer (Payroll)",employer:"Pilbara Ports Authority",location:"Perth",distance_km:15,pay:"$74,736 p.a. FTE advertised (paid pro rata at 0.6 FTE) + 13% super | ≈$37.82/hr derived | ≈$44,842 p.a. at 0.6 FTE derived",pay_min:37.82,pay_max:37.82,employment:"Permanent part-time — 0.6 FTE, 3 days/week or equivalent hours",arrangement:"Perth-based; part-time payroll administration",chance:"High",relevance_label:"Excellent",career:"Strong accounting/payroll pathway role supporting the Pilbara Ports payroll team. Permanent part-time structure is compatible with university study and builds payroll, finance administration and government/statutory-authority experience.",listed:"Sep 2026",date_added:"23 Sep 2026",closing:"28 Sep 2026 — 12:00 AM AWST",type:"Vacancy",status:"🟢 Apply",source:"https://search.jobs.wa.gov.au/jobs/administration-officer-payroll-perth-metropolitan-western-australia-australia-pilbara-region",category:["Accounting & Finance","Admin / Office"],verified_date:"23 Sep 2026",legitimacy_note:"Exact WA Government vacancy verified active 23 Sep 2026. Perth appointment is permanent part-time at 0.6 FTE; advertised Perth salary is $74,736 p.a. plus 13% super, paid pro rata."});
+  }
+})();
