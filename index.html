@@ -12,42 +12,7 @@
 <link rel="stylesheet" href="cards.css?v=20260904-cardlayout1">
 </head>
 <body>
-<div class="app">
-  <header class="hero">
-    <div class="topbar">
-      <div class="brand">
-        <h1>Main Job Tracker</h1>
-        <div class="updated" id="updated" style="display:none">Starting tracker…</div>
-      </div>
-      <div class="actions">
-        <button class="btn" onclick="clearLocalStatuses()">Clear local status changes</button>
-        <button class="btn download" onclick="downloadExcel()">⬇ Download Excel</button>
-      </div>
-    </div>
-    <nav class="page-switch" aria-label="Tracker pages">
-      <a class="page-link active" href="index.html">Page 1 · Main Jobs</a>
-      <a class="page-link" href="junior.html">Page 2 · Junior / Assistant</a>
-    </nav>
-  </header>
-  <main class="workspace">
-    <div class="tabs" id="tabs"></div>
-    <div class="toolbar">
-      <div class="controls">
-        <input id="search" class="search" placeholder="Search role, employer, location…" oninput="render()">
-        <button class="filter" data-filter="new" onclick="toggleFilter(this)">🆕 NEW only</button>
-        <button class="filter" data-filter="40" onclick="toggleFilter(this)">$40+/hr</button>
-        <button class="filter" data-filter="part" onclick="toggleFilter(this)">Part-time</button>
-        <button class="filter" data-filter="hybrid" onclick="toggleFilter(this)">Hybrid / remote</button>
-        <button class="filter" data-filter="gov" onclick="toggleFilter(this)">Government</button>
-        <button class="filter" data-filter="acct" onclick="toggleFilter(this)">Accounting</button>
-        <button class="filter" data-filter="fin" onclick="toggleFilter(this)">Finance</button>
-        <button class="filter" data-filter="soon" onclick="toggleFilter(this)">Closing soon</button>
-      </div>
-    </div>
-    <div class="summary" id="summary"></div>
-    <div class="tablewrap"><table id="tbl"><tr><td class="empty">Starting tracker…</td></tr></table></div>
-  </main>
-</div>
+<div class="app"><header class="hero"><div class="topbar"><div class="brand"><h1>Main Job Tracker</h1><div class="updated" id="updated" style="display:none">Starting tracker…</div></div><div class="actions"><button class="btn" onclick="clearLocalStatuses()">Clear local status changes</button><button class="btn download" onclick="downloadExcel()">⬇ Download Excel</button></div></div><nav class="page-switch" aria-label="Tracker pages"><a class="page-link active" href="index.html">Page 1 · Main Jobs</a><a class="page-link" href="junior.html">Page 2 · Junior / Assistant</a></nav></header><main class="workspace"><div class="tabs" id="tabs"></div><div class="toolbar"><div class="controls"><input id="search" class="search" placeholder="Search role, employer, location…" oninput="render()"><button class="filter" data-filter="new" onclick="toggleFilter(this)">🆕 NEW only</button><button class="filter" data-filter="40" onclick="toggleFilter(this)">$40+/hr</button><button class="filter" data-filter="part" onclick="toggleFilter(this)">Part-time</button><button class="filter" data-filter="hybrid" onclick="toggleFilter(this)">Hybrid / remote</button><button class="filter" data-filter="gov" onclick="toggleFilter(this)">Government</button><button class="filter" data-filter="acct" onclick="toggleFilter(this)">Accounting</button><button class="filter" data-filter="fin" onclick="toggleFilter(this)">Finance</button><button class="filter" data-filter="soon" onclick="toggleFilter(this)">Closing soon</button></div></div><div class="summary" id="summary"></div><div class="tablewrap"><table id="tbl"><tr><td class="empty">Starting tracker…</td></tr></table></div></main></div>
 <script src="tracker-app.js?v=20260831-ui2"></script>
 <script src="tracker-audit-overrides.js?v=20260902-fullaudit1"></script>
 <script src="tracker-audit-livefix.js?v=20260904-gmailsync1"></script>
@@ -55,7 +20,7 @@
 <script src="tracker-gmail-sync-20260912.js?v=20260912-gmailsync1"></script>
 <script src="tracker-gmail-sync-20260913.js?v=20260913-gmailsync1"></script>
 <script src="tracker-gmail-sync-20260924.js?v=20260924-gmailsync1"></script>
+<script src="tracker-gmail-sync-20260924b.js?v=20260924-gmailsync2"></script>
 <script src="exact-source-policy.js?v=20260904-exact1"></script>
 <script src="dark-mode.js"></script>
-</body>
-</html>
+</body></html>
