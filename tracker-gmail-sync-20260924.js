@@ -18,6 +18,12 @@
       application_note:"SEEK reported the employer was reviewing applications and the public ad was no longer advertised. Preserve as Applied because ad closure is not a rejection.",
       verified_date:"24 Sep 2026"
     },
+    J065:{
+      status:"🔵 Applied",
+      application_evidence:"SEEK application confirmation email; SEEK activity update 22 Sep 2026",
+      application_note:"SEEK reported the GeersSullivan public ad was no longer advertised. Preserve as Applied because public-ad closure is not a rejection.",
+      verified_date:"24 Sep 2026"
+    },
     J067:{
       status:"🔵 Applied",
       closing:"SEEK ad expired 20 Sep 2026 — application remains active",
@@ -29,6 +35,12 @@
       status:"🔵 Applied",
       application_evidence:"SEEK application confirmation email; SEEK activity update 22 Sep 2026",
       application_note:"SEEK reported the employer was reviewing applications and the public ad was no longer advertised. Preserve as Applied because ad closure is not a rejection.",
+      verified_date:"24 Sep 2026"
+    },
+    J070:{
+      status:"🔵 Applied",
+      application_evidence:"SEEK application confirmation email; SEEK activity update 22 Sep 2026",
+      application_note:"SEEK reported the Select Staffing public ad was no longer advertised. Preserve as Applied because public-ad closure is not a rejection.",
       verified_date:"24 Sep 2026"
     },
     J072:{
